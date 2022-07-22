@@ -40,12 +40,16 @@ public class ItemDisplay : MonoBehaviour
 
     } 
     public void DropItem(){
-        Vector3 position = Inventory.instance.Player.playerCamera.transform.position + (5 *Inventory.instance.Player.playerCamera.transform.forward);
+        Vector3 position = Inventory.instance.Player.gameObject.transform.position;
+        position += Inventory.instance.Player.gameObject.transform.forward * 5;
         Instantiate(current.prefab, position, Quaternion.identity);
         Inventory.instance.RemoveItem(current);
-        Inventory.instance.UpdateAll();
-        UpdateDisplay(null);
         
+        
+        //
+        UpdateDisplay(null);
+
+
     }
     public void AddToCraft(){
         if(current == null){

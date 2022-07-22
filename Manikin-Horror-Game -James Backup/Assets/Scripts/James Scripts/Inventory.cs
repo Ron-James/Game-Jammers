@@ -89,8 +89,10 @@ public class Inventory : Singleton<Inventory>
     }
 
     public void RemoveItem(Item i){
+
         for (int loop = 0; loop < items.Length; loop++){
             if(items[loop] == i){
+                Debug.Log(items[loop].itemName);
                 items[loop] = null;
                 OrderItems();
                 inventoryMenu.GetComponentInChildren<InventoryDisplay>().UpdateDisplays();
@@ -106,8 +108,8 @@ public class Inventory : Singleton<Inventory>
         else{
             items[position] = null;
             OrderItems();
-            inventoryMenu.GetComponentInChildren<InventoryDisplay>().UpdateDisplays();
-            
+            UpdateAll();
+
         }
     }
 
