@@ -17,6 +17,11 @@ public class SceneController : Singleton<SceneController>
     {
         
     }
+    public void GameOver()
+    {
+        SceneManager.LoadScene("Gameover");
+    }
+
     public void LoadGame(){
         SceneManager.LoadScene("Game");
     }

@@ -4,5 +4,20 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: a99bb53b2e4b96c46b8981c798f28160
+  - enabled: 1
+    path: Assets/Scenes/Game.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/KillCam.unity
+    guid: aa8149d7b3b536e4492e96dd965df5fb
+  - enabled: 1
+    path: Assets/Scenes/Gameover.unity
+    guid: 19cba4df7a0894d49906ccdae4bcfada
+  - enabled: 1
+    path: Assets/Scenes/Win.unity
+    guid: f148d4aa90356544ebe9b1cfcd8e6831
   m_configObjects: {}
